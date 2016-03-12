@@ -14,9 +14,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<body ng-app="app" style="padding-bottom: 70px;" ng-controller="appController">
+<body ng-app="app" ng-controller="appController">
 
-<nav class="navbar navbar-inverse navbar-fixed-top navbar-inner">
+<nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
 
         <div class="navbar-header">
@@ -46,13 +46,6 @@
     </div>
 </nav>
 
-
-<div class="container">
-    <div class="jumbotron">
-        <h1>Angular Validate This Form</h1>
-        <p>Dynamically insert ng-message validation messages to your AngularJS form!</p>
-    </div>
-</div>
 
 <div class="ui-view-container">
     <div ui-view></div>
@@ -89,10 +82,7 @@
 
 <!--Some Styling-->
 <style>
-    body {
-        padding-top: 90px;
-    }
-
+        
     .jumbotron {
         padding-top: 20px;
         padding-bottom: 20px;
