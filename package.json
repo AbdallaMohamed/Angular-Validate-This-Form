@@ -1,0 +1,36 @@
+{
+  "name": "angular-validate-this-form",
+  "version": "1.0.0",
+  "description": "Dynamically insert ng-message validation messages to your AngularJS form.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/http-server -p 8181"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdallaMohamed/Angular-Validate-This-Form.git"
+  },
+  "keywords": [
+    "angular",
+    "angularJs",
+    "validation",
+    "forms",
+    "ng-messages"
+  ],
+  "author": "Abdalla Mohamed El-Abd <abdalla.mohamed.elabd@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbdallaMohamed/Angular-Validate-This-Form/issues"
+  },
+  "homepage": "https://github.com/AbdallaMohamed/Angular-Validate-This-Form#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-ng-annotate": "^1.0.0",
+    "gulp-uglify": "^1.2.0",
+    "http-server": "^0.9.0"
+  }
+}
