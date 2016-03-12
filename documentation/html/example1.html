@@ -1,0 +1,140 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-sm-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">A simple example</h3>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal no-margin" name="myForm" novalidate validate-this-form>
+                        <div class="form-group">
+
+                            <label for="name" class="col-sm-2 control-label">Name</label>
+
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="name" ng-model="person.name" required
+                                       placeholder="Name" name="name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <label for="email" class="col-sm-2 control-label">Email</label>
+
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" ng-model="person.email" required
+                                       placeholder="Email" name="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <label for="password" class="col-sm-2 control-label">Password</label>
+
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="password" ng-model="person.password"
+                                       required ng-minlength="4" ng-maxlength="10"
+                                       placeholder="Password" name="password">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="age" class="col-sm-2 control-label">Age</label>
+
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="age" ng-model="person.age" required
+                                       min="10" max="60"
+                                       placeholder="Age" name="age">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="gender" class="col-sm-2 control-label">Gender</label>
+
+                            <div class="col-sm-10">
+                                <select name="gender" id="gender" ng-model="person.gender" class="form-control"
+                                        required>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="birthDate" class="col-sm-2 control-label">Birth Date</label>
+
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control" id="birthDate" ng-model="person.birthDate"
+                                       required
+                                       placeholder="Birth Date" name="birthDate">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Marital Status</label>
+
+                            <div class="col-lg-10">
+                                <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="married" id="married" value="Married"
+                                               ng-model="person.maritalStatus" required>
+                                        Married
+                                    </label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="separated" id="separated" value="Separated"
+                                               ng-model="person.maritalStatus" required>
+                                        Separated
+                                    </label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="divorced" id="divorced" value="Divorced"
+                                               ng-model="person.maritalStatus" required>
+                                        Divorced
+                                    </label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="widowed" id="widowed" value="Widowed"
+                                               ng-model="person.maritalStatus" required>
+                                        Widowed
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="aboutMe" class="col-sm-2 control-label">About me</label>
+
+                            <div class="col-sm-10">
+                                <textarea name="aboutMe" required class="form-control" id="aboutMe"
+                                          ng-model="person.aboutMe" rows="3" style="resize: vertical;"
+                                          placeholder="About me"></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="submit" ng-click="submitForm()" class="btn btn-primary pull-right"
+                                       value="Submit"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <pre>{{person | json}}</pre>
+        </div>
+        <style>
+            .radio-inline {
+                padding-left: 0px;
+            }
+        </style>
+    </div>
+</div>
